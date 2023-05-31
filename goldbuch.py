@@ -25,7 +25,7 @@ def is_prime(n):
 start = int(input("Enter the starting even number: "))
 end = int(input("Enter the ending even number: "))
 
-# If the starting number is odd, add 1to make it even
+# If the starting number is odd, add 1 to make it even
 if start % 2 != 0:
     start += 1
 
@@ -33,3 +33,5 @@ if start % 2 != 0:
 for n in range(start, end+1, 2):
     if check_goldbach(n):
         print(f"{n} can be represented as the sum of two prime numbers")
+
+# Heuristic justification
